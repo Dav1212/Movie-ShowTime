@@ -5,7 +5,7 @@ import 'package:rxdart/subjects.dart';
 class NowPlayingListBloc {
   final MovieRepository _repository = MovieRepository();
   final BehaviorSubject<MovieResponse> _subject =
-  BehaviorSubject<MovieResponse>();
+      BehaviorSubject<MovieResponse>();
 
   getMovies() async {
     MovieResponse response = await _repository.getPlayingMovies();

@@ -5,7 +5,7 @@ import 'package:rxdart/subjects.dart';
 class GenresListBloc {
   final MovieRepository _repository = MovieRepository();
   final BehaviorSubject<GenreResponse> _subject =
-  BehaviorSubject<GenreResponse>();
+      BehaviorSubject<GenreResponse>();
 
   getGenres() async {
     GenreResponse response = await _repository.getGenres();

@@ -1,13 +1,13 @@
 class Genre {
   final int id;
   final String name;
-   
-   Genre(
+
+  Genre(
     this.id,
     this.name,
-   );
+  );
 
-   Genre.fromJson(Map<String, dynamic> json)
-          : id = json["id"],
-            name = json["name"];
+  Genre.fromJson(Map<String, dynamic> json)
+      : id = json["id"],
+        name = json["name"];
 }

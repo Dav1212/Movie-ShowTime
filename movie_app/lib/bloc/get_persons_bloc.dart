@@ -5,9 +5,9 @@ import 'package:rxdart/subjects.dart';
 class PersonsListBloc {
   final MovieRepository _repository = MovieRepository();
   final BehaviorSubject<PersonResponse> _subject =
-  BehaviorSubject<PersonResponse>();
+      BehaviorSubject<PersonResponse>();
 
-  getMovies() async {
+  getPersons() async {
     PersonResponse response = await _repository.getPersons();
     _subject.sink.add(response);
   }

@@ -14,9 +14,9 @@ class Person {
   );
 
   Person.fromJson(Map<String, dynamic> json)
-    : id = json["id"],
-    popularity = json["popularity"],
-    name = json["name"],
-    profileImg = json["profile_path"],
-    known = json["known_for_department"];
+      : id = json["id"],
+        popularity = json["popularity"],
+        name = json["name"],
+        profileImg = json["profile_path"],
+        known = json["known_for_department"];
 }

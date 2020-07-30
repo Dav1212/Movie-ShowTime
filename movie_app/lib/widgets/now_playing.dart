@@ -88,7 +88,6 @@ class _NowPlayingState extends State<NowPlaying> {
               scrollDirection: Axis.horizontal,
               itemCount: movies.take(5).length,
               itemBuilder: (context, index) {
-                
                 return Stack(
                   children: <Widget>[
                     Container(
@@ -107,7 +106,11 @@ class _NowPlayingState extends State<NowPlaying> {
                       bottom: 0,
                       right: 0,
                       left: 0,
-                      child: Icon(Icons.play_circle_outline, color: Style.Colors.secondColor, size: 70.0,),
+                      child: Icon(
+                        Icons.play_circle_outline,
+                        color: Style.Colors.secondColor,
+                        size: 70.0,
+                      ),
                     ),
                     Positioned(
                       bottom: 30.0,
@@ -120,11 +123,10 @@ class _NowPlayingState extends State<NowPlaying> {
                             Text(
                               movies[index].title,
                               style: TextStyle(
-                                height: 1.5,
-                                color: Colors.white,
-                                fontWeight: FontWeight.bold,
-                                fontSize: 16.0
-                              ),
+                                  height: 1.5,
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 16.0),
                             )
                           ],
                         ),

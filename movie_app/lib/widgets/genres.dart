@@ -5,16 +5,13 @@ import 'package:movie_app/model/genre_response.dart';
 import 'package:movie_app/widgets/genres_list.dart';
 
 class GenresScreen extends StatefulWidget {
-
   @override
   _GenresScreenState createState() => _GenresScreenState();
 }
 
 class _GenresScreenState extends State<GenresScreen> {
-
   @override
   void initState() {
-
     super.initState();
     genresBloc.getGenres();
   }
@@ -71,7 +68,7 @@ class _GenresScreenState extends State<GenresScreen> {
       return Container(
         child: Text("No Genre"),
       );
-    } else return GenresList(genres: genres);
-
+    } else
+      return GenresList(genres: genres);
   }
 }
